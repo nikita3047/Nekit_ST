@@ -1,0 +1,143 @@
+<doctype html>
+    <html>
+
+    <head>
+        <title>Яндекс.Справочник</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+            <div class="header_top">
+                <div class="logo">
+                    <div class="logo_ya">
+                        <a href="http://www.yandex.ru">Яндекс</a>
+                    </div>
+                    <div class="logo_info">
+                        <a href="yasli.html">Справочник</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="search_area">
+                        <input placeholder="Название, телефон, сайт"></input>
+                    </div>
+                    <div class="search_button">
+                        Найти
+                    </div>
+                </div>
+                <div class="face">
+                    <img src="face.png">
+                </div>
+            </div>
+            <script>
+                function choice(id) {
+                    document.getElementById("it0").style.border = "0px";
+                    document.getElementById("it1").style.border = "0px";
+                    document.getElementById("it2").style.border = "0px";
+                    id.style.borderBottom = "2px solid black";
+                }
+            </script>
+            <nav class="header_bottom">
+                <ul class="nav_list">
+                    <li class="it0" id="it0" onclick="choice(this)"><a href=#>Мои организации</a></li>
+                    <li class="it1" id="it1" onclick="choice(this)"><a href=#>Заявки на изменения</a></li>
+                    <li class="it2" id="it2" onclick="choice(this)"><a href=#>Мои заказы</a></li>
+                </ul>
+            </nav>
+        </header>
+        <content class="main">
+            <div class="name_and_map">
+                <section class="name">
+                    Кафе Гладиатор
+                </section>
+                <div class="map">
+                    <a href="https://yandex.ru/maps/"><i class="fas fa-map-marker-alt"></i> Страница на Картах</a>
+                </div>
+            </div>
+            <script>
+                function menu_choice(id) {
+                    document.getElementById("sec0").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("sec1").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("sec2").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("sec3").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("sec4").style.backgroundColor = "#FFFFFF";
+                    id.style.backgroundColor = "#feeaa1";
+                }
+            </script>
+            <section class="menu">
+                <section class="sec0" id="sec0" onclick="menu_choice(this)"><a href=#>Информация</a></section>
+                <section class="sec1" id="sec1" onclick="menu_choice(this)"><a href=#>Услуги</a></section>
+                <section class="sec2" id="sec2" onclick="menu_choice(this)"><a href=#>Фото</a></section>
+                <section class="sec3" id="sec3" onclick="menu_choice(this)"><a href=#>Отзывы</a></section>
+                <section class="sec4" id="sec4" onclick="menu_choice(this)"><a href=#>Статистика</a></section>
+            </section>
+            <div class="about_reviews">
+                <section class="number_reviews">12 отзывов об организации</section>
+                <section class="rating">9.8</section>
+            </div>
+            <section class="all_reviews">
+                <div class="review">
+                    <div class="review_top">
+                        <div class="rev_face"><i class="fas fa-user-circle"></i></div>
+                        <div class="rev_name">Василий Привалов</div>
+                        <div class="rev_data">4 апреля 2016</div>
+                        <div class="rev_value">оценка: <i class="fas fa-thumbs-up"></i></i>
+                        </div>
+                    </div>
+                    <article class="rev_article">Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики<a class="blin" onclick="alert('Я не знаю как это сделать')">читать полностью</a></article>
+                    <div class="rev_bottom">
+                        <div class="rev_button">Ответить</div>
+                        <div class="rev_button">Пожаловаться</div>
+                        <div class="rev_link"><a href="#">Ссылка на отзыв</a></div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review_top">
+                        <div class="rev_face"><i class="fas fa-user-circle"></i></div>
+                        <div class="rev_name">Илья Пряников</div>
+                        <div class="rev_data">9 мая 2016</div>
+                        <div class="rev_value">оценка: <i class="fas fa-thumbs-up"></i></i>
+                        </div>
+                    </div>
+                    <article class="rev_article">Удивительное, хорошее место. Кухня на высоте. Интерьер крайне приятный, играет рояль каждый раз и для деток проводят мастер-классы. На радость родителям — бесплатно!</article>
+                    <div class="rev_bottom">
+                        <div class="rev_button">Ответить</div>
+                        <div class="rev_button">Пожаловаться</div>
+                        <div class="rev_link"><a href="#">Ссылка на отзыв</a></div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review_top">
+                        <div class="bad rev_face"><i class="fas fa-user-circle"></i></div>
+                        <div class="rev_name">Лидия Никарагуа</div>
+                        <div class="rev_data">23 октября 2016</div>
+                        <div class="rev_value">оценка: <i class="fas fa-thumbs-down"></i>
+                        </div>
+                    </div>
+                    <article class="rev_article">Не понравилось. На Белорусской и Пролетарской как то поуютнее, обстановка поприятнее. Маленький выбор пива, а цена на него большая. Лёффе 0.33 290р!!! Не очень понравилась еда. Брали фирменные бургеры. Мясо было пересоленное и переперченное.
+                        Плюс какое то слишком жирное. В итоге, просуммировав все, считаю, что при нынешнем уровне качества заведения цены на еду и напитки должны быть ниже.</article>
+                    <div class="rev_bottom">
+                        <div class="rev_button">Ответить</div>
+                        <div class="rev_button">Пожаловаться</div>
+                        <div class="rev_link"><a href="#">Ссылка на отзыв</a></div>
+                    </div>
+                </div>
+
+                <section class="your_answer">
+                    <div class="help">Напишите ответ на отзыв</div>
+                    <textarea class="answer" onclick="document.getElementById('ans_button').style.backgroundColor='white'
+                                                        document.getElementById('ans_button').style.color='black' "></textarea>
+                    <div class=" ans_button " id="ans_button">Опубликовать</div>
+                </section>
+                <div class="see_all_reviews ">Все 134 отзывов</div>
+            </section>
+        </content>
+    </body>
+
+    </html>
