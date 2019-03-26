@@ -252,7 +252,6 @@ textarea {
     letter-spacing: -0.04em;
     cursor: pointer;
     color: #a0a0a0;
-    margin-left: 12px;
 }
 
 .number_reviews {
@@ -436,4 +435,13 @@ textarea {
 
 .see_all_reviews:active {
     background-color: #feeaa1;
+}
+
+#rev1 {
+    overflow: hidden;
+    height: 55px;
+}
+
+#show_more {
+    padding-left: 12px;
 }
