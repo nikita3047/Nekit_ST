@@ -40,7 +40,7 @@ header {
 }
 
 .it1 {
-    margin-top: -2px;
+    margin-top: 0px;
     margin-right: 11px;
     padding: 20px 0px;
     border-bottom: 2px black;
@@ -48,7 +48,7 @@ header {
 }
 
 .it2 {
-    margin-top: -2px;
+    margin-top: 0px;
     padding: 20px 0px;
     border-bottom: 2px black;
     letter-spacing: -0.02em;
@@ -252,7 +252,6 @@ textarea {
     letter-spacing: -0.04em;
     cursor: pointer;
     color: #a0a0a0;
-    margin-left: 12px;
 }
 
 .number_reviews {
@@ -436,4 +435,13 @@ textarea {
 
 .see_all_reviews:active {
     background-color: #feeaa1;
+}
+
+#rev1 {
+    overflow: hidden;
+    height: 55px;
+}
+
+#show_more {
+    padding-left: 12px;
 }
