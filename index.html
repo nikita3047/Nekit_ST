@@ -88,7 +88,23 @@
                         <div class="rev_value">оценка: <i class="fas fa-thumbs-up"></i></i>
                         </div>
                     </div>
-                    <article class="rev_article">Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики<a class="blin" onclick="alert('Я не знаю как это сделать')">читать полностью</a></article>
+                    <script>
+                        function show() {
+                            document.getElementById('rev1').style.height = 'auto';
+                            document.getElementById('show_more').innerHTML = '';
+                            document.getElementById('show_more').style.paddingLeft = '0px';
+                            document.getElementById('show_more').style.opacity = '0';
+                        }
+
+                        function roll_up() {
+                            document.getElementById('show_more').style.paddingLeft = '12px';
+                            document.getElementById('show_more').style.opacity = '1';
+                            document.getElementById('show_more').innerHTML = 'читать полностью';
+                            document.getElementById('rev1').style.height = '55px';
+                        }
+                    </script>
+                    <article class="rev_article" id="rev1">Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики<a class="blin" id="show_more" onclick="show(id)">читать полностью</a>                        Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики<br><a class="blin" id="roll_up"
+                            onclick="roll_up()">свернуть</a></article>
                     <div class="rev_bottom">
                         <div class="rev_button">Ответить</div>
                         <div class="rev_button">Пожаловаться</div>
